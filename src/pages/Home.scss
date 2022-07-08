@@ -1,0 +1,23 @@
+.home{
+    .container{
+        .loading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            
+            
+        }
+
+        .countries{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            
+            @media (max-width: 475px) {
+                grid-template-columns: 1fr;
+                place-items: center;
+            }
+        }
+    }
+}

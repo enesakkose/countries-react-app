@@ -1,0 +1,32 @@
+.country-card-container{
+    color: $darkBlue;
+    
+    .country-card{
+        width: 270px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        
+        img{
+            width: 270px;
+            height: 160px;
+        }
+
+        &-info{
+            display: flex;
+            flex-direction: column;
+            padding: $PL $PL $PXL;
+
+            h2{
+                padding-bottom: $PL;
+            }
+
+            h5{
+                font-weight: 600;
+                padding-bottom: $PS;
+                
+                span{
+                    font-weight: 300;
+                }
+            }
+        }
+    } 
+}
