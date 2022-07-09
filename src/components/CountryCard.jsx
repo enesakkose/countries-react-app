@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './CountryCard.scss'
 
 function CountryCard({countries}) {
-
+  console.log(countries)
   return (
     <>
               {countries.map((country, index) => (
