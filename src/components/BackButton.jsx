@@ -5,7 +5,7 @@ import './BackButton.scss'
 function BackButton() {
     const navigate = useNavigate()
   return (
-    <button className='backButton' onClick={() => navigate('/')}>
+    <button className='backButton' onClick={() => navigate('/', {replace: true})}>
          <MdOutlineKeyboardBackspace size={25}/>
          Back
     </button>

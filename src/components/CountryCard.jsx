@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 import './CountryCard.scss'
 
 function CountryCard({countries}) {
-  console.log(countries)
+
+
+
   return (
     <>
-              {countries.map((country, index) => (
+              {countries?.map((country, index) => (
                 <Link key={index} className='country-card-container' to={`/name/${country.name.common}`}>
                 <div  className="country-card">
                   <img src={country.flags.png} alt="" />
